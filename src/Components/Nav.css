@@ -1,0 +1,14 @@
+.nav{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(204, 216, 215);
+    margin-bottom: 10px;
+    box-shadow: 5px 2px 3px rgba(56, 153, 132, 0.771);
+
+}
+.under{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
