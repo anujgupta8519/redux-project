@@ -14,7 +14,7 @@ export default function SingleProduct({product}) {
 
   return (
     <div className='cardBorder' >
-        <img className='img' src={product.image} alt="" />
+        <img className='img' src={product.images[0]} alt="" />
         <h3 className='productTitle'>{product.title}</h3>
         <p className='price'>{product.price}</p>
         <p className='desc'>{product.description}</p>
