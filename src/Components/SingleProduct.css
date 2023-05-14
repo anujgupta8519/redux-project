@@ -1,0 +1,43 @@
+.cardBorder{
+    border: 3px solid black;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 10px;
+    transition: 1s 1s ease-in-out all;
+}
+.cardBorder:hover{
+   transform: scale(1.02);
+   box-shadow: 4px 4px 4px rgb(245, 209, 209);
+}
+.img{
+    height: 50%;
+    width: 100%;
+}
+.productTitle{
+    font-weight: 0.8rem;
+}
+.price{
+    color: rgb(193, 213, 231);
+    font-weight: 0.8rem;
+}
+.desc{
+    color: rgba(4, 3, 3, 0.571);
+}
+.buttonClass{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+button{
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-weight: 1.8rem;
+}

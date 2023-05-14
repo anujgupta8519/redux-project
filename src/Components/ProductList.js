@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import { loadData } from '../Data/ProductSlice';
+import SingleProduct from './SingleProduct';
 
 function ProductList() {
 
@@ -19,9 +20,9 @@ function ProductList() {
 
         }
   return (
-    <div>
+    <div style={{display:"grid", marginTop:"50px", gridTemplateColumns:"repeat(2,40%)",justifyContent:"space-evenly", rowGap:"50px"}}>
      { productArray.map(item=> {
-        return <p>{item.title}</p>
+        return <SingleProduct key={item.id}  product={item}/>
      })}
     </div>
   )

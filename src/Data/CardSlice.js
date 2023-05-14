@@ -22,8 +22,8 @@ const CardSlice = createSlice({
             const temp =state.cart.find(item=>item.id===action.payload)
             if (temp) {
                 temp.quantity -=1;
-               if (state.cart.quantity===0) {
-                state.cart = state.cart.filter(item => item.id!==temp.id)
+               if ( temp.quantity ==0) {
+                state.cart = state.cart.filter(item => item.id!==action.payload)
                }
             }
         }
